@@ -18,6 +18,7 @@ import {
 import './HomePage.css';
 
 
+//class home page starts
 class HomePage extends React.Component {
   scrollToTop = () => window.scrollTo(0, 0);
 
