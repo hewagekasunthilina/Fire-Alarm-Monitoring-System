@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import AlertPage from './pages/AlertPage';
 import HomePage from './pages/HomePage';
+import AlarmList from './pages/AlarmList';
 
 
 
@@ -15,6 +16,7 @@ class Routes extends React.Component {
     return (
       <Switch>
         <Route exact path='/' component={HomePage} />
+        <Route exact path='/AlarmList' component={AlarmList}/>
 
 
         {/* FREE */}

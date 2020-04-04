@@ -24,7 +24,7 @@ class HomePage extends React.Component {
   render() {
     return (
         <>
-          <MDBEdgeHeader color='indigo darken-3' className='sectionPage' />
+          <MDBEdgeHeader color='indigo darken-3'  />
           <div className='mt-3 mb-5'>
             <MDBFreeBird>
               <MDBRow>
@@ -108,7 +108,7 @@ class HomePage extends React.Component {
                             </MDBCardText>
                             <MDBNavLink
                                 tag='button'
-                                to='/createVehicle'
+                                to='/AlarmList'
                                 color='mdb-color'
                                 className='btn btn-outline-mdb-color btn-sm btn-rounded d-inline'
                                 onClick={this.scrollToTop}
