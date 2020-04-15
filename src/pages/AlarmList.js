@@ -37,6 +37,7 @@ class DatatablePage extends React.Component {
     }
 
     getDetails = () => {
+
         fetch("https://www.firealermmonitoring.baishost.com/status.php", {
             method: "GET",
         })
