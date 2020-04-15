@@ -18,10 +18,6 @@ class Routes extends React.Component {
         <Route exact path='/' component={HomePage} />
         <Route exact path='/AlarmList' component={AlarmList}/>
 
-
-        {/* FREE */}
-          <Route path='/advanced/alerts' component={AlertPage} />
-
         <Route
           render={function() {
             return <h1>Not Found</h1>;

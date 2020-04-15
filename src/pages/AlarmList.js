@@ -9,7 +9,7 @@ class DatatablePage extends React.Component {
                 label: 'ID'
             },
             {
-                field: 'device_status"',
+                field: 'device_status',
                 label: 'Status'
             },
             {
@@ -33,10 +33,10 @@ class DatatablePage extends React.Component {
     };
 
     componentDidMount() {
-        this.getMovies();
+        this.getDetails();
     }
 
-    getMovies = () => {
+    getDetails = () => {
         fetch("https://www.firealermmonitoring.baishost.com/status.php", {
             method: "GET",
         })
@@ -65,6 +65,7 @@ class DatatablePage extends React.Component {
         return (
             <>
                 <MDBDataTable
+                    style={{width:'98%', marginLeft:'1%'}}
                     striped
                     bordered
                     hover
