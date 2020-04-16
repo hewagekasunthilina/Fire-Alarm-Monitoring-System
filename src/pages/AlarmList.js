@@ -5,6 +5,10 @@ class DatatablePage extends React.Component {
     state = {
         columns: [
             {
+                field: 'id',
+                label: '#'
+            },
+            {
                 field: 'device_id',
                 label: 'ID'
             },
@@ -46,6 +50,7 @@ class DatatablePage extends React.Component {
                 let rows = [];
                 json.forEach(item => rows.push({
 
+                    id: item.id,
                     device_id: item.device_id,
                     device_status: item.device_status,
                     device_floor: item.device_floor,
