@@ -1,15 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-
-// FREE
-
-import AlertPage from './pages/AlertPage';
 import HomePage from './pages/HomePage';
 import AlarmList from './pages/AlarmList';
-
-
-
 
 class Routes extends React.Component {
   render() {
