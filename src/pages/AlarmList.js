@@ -5,11 +5,15 @@ class DatatablePage extends React.Component {
     state = {
         columns: [
             {
+                field: 'id',
+                label: '#'
+            },
+            {
                 field: 'device_id',
                 label: 'ID'
             },
             {
-                field: 'device_status"',
+                field: 'device_status',
                 label: 'Status'
             },
             {
@@ -33,10 +37,11 @@ class DatatablePage extends React.Component {
     };
 
     componentDidMount() {
-        this.getMovies();
+        this.getDetails();
     }
 
-    getMovies = () => {
+    getDetails = () => {
+
         fetch("https://www.firealermmonitoring.baishost.com/status.php", {
             method: "GET",
         })
@@ -45,6 +50,7 @@ class DatatablePage extends React.Component {
                 let rows = [];
                 json.forEach(item => rows.push({
 
+                    id: item.id,
                     device_id: item.device_id,
                     device_status: item.device_status,
                     device_floor: item.device_floor,
@@ -65,6 +71,7 @@ class DatatablePage extends React.Component {
         return (
             <>
                 <MDBDataTable
+                    style={{width:'98%', marginLeft:'1%'}}
                     striped
                     bordered
                     hover

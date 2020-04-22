@@ -109,7 +109,7 @@ class HomePage extends React.Component {
                             </MDBCardText>
                             <MDBNavLink
                                 tag='button'
-                                to='/AlarmList'
+                                to=''
                                 color='mdb-color'
                                 className='btn btn-outline-mdb-color btn-sm btn-rounded d-inline'
                                 onClick={this.scrollToTop}
