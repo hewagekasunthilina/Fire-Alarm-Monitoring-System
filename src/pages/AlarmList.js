@@ -38,6 +38,7 @@ class DatatablePage extends React.Component {
 
     componentDidMount() {
         this.getDetails();
+        setInterval(this.getDetails, 5000);
     }
 
     getDetails = () => {
